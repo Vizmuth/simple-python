@@ -252,6 +252,8 @@ def update_visible(value: np.ndarray, visible: np.ndarray, pos: Tuple[int, int],
         elif visible[pos[0], pos[1]] == -1:
             visible[pos[0], pos[1]] = 0
             return visible
+        else:
+            return visible
     else:
         if visible[pos[0], pos[1]] == -1:
             return visible
